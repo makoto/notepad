@@ -7,8 +7,6 @@ class window.View
     @data = data;
     @template = Handlebars.compile($(@settings.template).text())
     @html = $(@template(@data))
-    console.log("HTML1")
-    console.log(@html)
 
   container: -> $(@settings.container)
 
@@ -17,10 +15,6 @@ class window.View
     @html = $(@template(@data))
     @render()
 
-  remove: ->
-    @html.remove()
+  remove: -> @html.remove()
 
-  render: ->
-    console.log("HTML2")
-    console.log(@html)
-    $(@settings.container).html(@html)
+  render: -> $(@settings.container).html(@html)

@@ -8,14 +8,11 @@
       this.data = data;
       this.template = Handlebars.compile($(this.settings.template).text());
       this.html = $(this.template(this.data));
-      console.log("constructing...");
     }
     View.prototype.container = function() {
-      console.log("container...");
       return $(this.settings.container);
     };
     View.prototype.reload = function(data) {
-      console.log("reload...");
       if (data) {
         this.data = data;
       }
