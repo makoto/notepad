@@ -1,7 +1,7 @@
 (function() {
-  $(document.ready)(function() {
+  jQuery(function() {
     return Note.load(function() {
-      return App.start;
+      return App.start();
     });
   });
 }).call(this);

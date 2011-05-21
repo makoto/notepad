@@ -1,2 +1,1 @@
-$(document.ready) ->
-  Note.load -> App.start
+jQuery -> Note.load -> App.start()
